@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
 
 <head>
     <meta charset="utf-8">
@@ -14,6 +14,7 @@
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="http://getbootstrap.com/examples/blog/blog.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="about.css">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
@@ -47,23 +48,22 @@
                 <span class="caret"></span>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dLabel">
-                world app
+                happy
+                <br>world
+                <br>good
             </ul>
         </div>
-
-        <button type="button" id="myButton"  data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
-           <a href="https://github.com/">Loading state</a> github
-        </button>
+        <br>
+        <a href="https://www.youtube.com/watch?v=NrWsfhB6L50" type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
+            Link
+        </a>
         <script>
-        $('#myButton').on('click', function() {
-            var $btn = $(this).button('loading')
-                // business logic...
+        $('#myButton').onclick(function() {
+            var $btn = $(this).button('loading');
+            // business logic...
             $btn.button('reset')
         })
         </script>
-
-
-
         <div class="row">
             <div class="col-sm-8 blog-main">
                 <div class="blog-post">
@@ -120,15 +120,6 @@
                     </ul>
                     <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
                     <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-                </div>
-                <div class="dropdown">
-                    <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown trigger
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dLabel">
-                        ...
-                    </ul>
                 </div>
                 <!-- /.blog-post -->
                 <nav>
